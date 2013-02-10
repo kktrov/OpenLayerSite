@@ -1,0 +1,10 @@
+D:\Trov\Projects\Mapping\TrovMapping\TrovMapping\bin\TrovMapping.dll
+D:\Trov\Projects\Mapping\TrovMapping\TrovMapping\bin\TrovMapping.pdb
+D:\Trov\Projects\Mapping\TrovMapping\TrovMapping\obj\Debug\TrovMapping.csprojResolveAssemblyReference.cache
+D:\Trov\Projects\Mapping\TrovMapping\TrovMapping\obj\Debug\TrovMapping.dll
+D:\Trov\Projects\Mapping\TrovMapping\TrovMapping\obj\Debug\TrovMapping.pdb
+J:\Trov\Projects\Mapping\TrovMapping\TrovMapping\bin\TrovMapping.dll
+J:\Trov\Projects\Mapping\TrovMapping\TrovMapping\bin\TrovMapping.pdb
+J:\Trov\Projects\Mapping\TrovMapping\TrovMapping\obj\Debug\TrovMapping.csprojResolveAssemblyReference.cache
+J:\Trov\Projects\Mapping\TrovMapping\TrovMapping\obj\Debug\TrovMapping.dll
+J:\Trov\Projects\Mapping\TrovMapping\TrovMapping\obj\Debug\TrovMapping.pdb

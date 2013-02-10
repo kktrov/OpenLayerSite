@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Web Developer Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrovMapping", "TrovMapping.csproj", "{43E2248F-9042-4971-9B69-4EF8A165A279}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43E2248F-9042-4971-9B69-4EF8A165A279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E2248F-9042-4971-9B69-4EF8A165A279}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E2248F-9042-4971-9B69-4EF8A165A279}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E2248F-9042-4971-9B69-4EF8A165A279}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE HTML>
+<head>
+   <title>OpenLayers Example</title>
+ <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+<!--
+ <script src="/WebSite6/OpenLayers-master/lib/OpenLayers.js"></script>
+  -->
+ <script>
+ 
+//    var OpenLayers.singleFile = true;
+    
+    function get_my_url (bounds) {
+        var res = this.map.getResolution();
+        var x = Math.round ((bounds.left - this.maxExtent.left) / (res * this.tileSize.w));
+        var y = Math.round ((this.maxExtent.top - bounds.top) / (res * this.tileSize.h));
+        var z = this.map.getZoom();
+
+        var path = z + "/" + x + "/" + y + "." + this.type; 
+        var url = this.url;
+        if (url instanceof Array) {
+            url = this.selectUrl(path, url);
+        }
+        return url + path;
+    }
+
+    var extent = new OpenLayers.Bounds(0, 0, 1024, 1024);
+
+    function init() {
+        var options = {
+//            allOverlays: true,
+            maxExtent: extent,
+            bounds: extent,
+            maxResolution: 1024,
+            zoom: 0,
+            numZoomLevels: 3,
+            tileSize: new OpenLayers.Size(1024, 1024),
+            controls: [
+                new OpenLayers.Control.Navigation(),
+                new OpenLayers.Control.PanZoomBar(),
+                new OpenLayers.Control.Attribution()
+            ]
+        };
+        map = new OpenLayers.Map("Map", options);
+        newLayer = new OpenLayers.Layer.TMS(
+            "Name",
+            "http://localhost:80/Images/",
+            { 'type': 'jpg',
+              'getURL': get_my_url,
+              singleTile: true,
+              tileSize: new OpenLayers.Size(1024, 1024),
+              ratio: 1.0,
+              maxExtent: extent,
+              bounds: extent,
+            }
+        );
+        map.addLayer(newLayer);
+        map.setCenter(new OpenLayers.LonLat(1, 1) );
+    }
+  </script>
+</head>
+
+<body onload="init()">
+  <div id="Map" style="height:250px"></div>
+</body>
+    
